@@ -31,6 +31,7 @@ describe('The webpage', () => {
     });
 
     it('should have have changed menu items @navbar-menu', () => {
+      navbar = null;
       const menuItems = Array.from(navbar.querySelectorAll('.nav li a'));
       assert(menuItems.length >= 2, 'Our menu needs at least 2 `li` elements.');
 
